@@ -6,13 +6,14 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+// Analyzer finds duplicated imports in same file.
 var Analyzer = &analysis.Analyzer{
 	Name: "dupimport",
-	Doc:  Doc,
+	Doc:  doc,
 	Run:  run,
 }
 
-const Doc = "dupimport is ..."
+const doc = "dupimport finds duplicated imports in same file"
 
 func run(pass *analysis.Pass) (interface{}, error) {
 	paths := map[string]bool{}
