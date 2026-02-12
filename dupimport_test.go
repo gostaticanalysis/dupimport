@@ -11,3 +11,8 @@ func Test(t *testing.T) {
 	testdata := analysistest.TestData()
 	analysistest.Run(t, testdata, dupimport.Analyzer, "a")
 }
+
+func TestSuggestedFix(t *testing.T) {
+	testdata := analysistest.TestData()
+	analysistest.RunWithSuggestedFixes(t, testdata, dupimport.Analyzer, "a")
+}
