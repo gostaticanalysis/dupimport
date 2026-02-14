@@ -1,0 +1,10 @@
+package c
+
+import (
+	myfmt "fmt"
+)
+
+func main() {
+	myfmt.Println("hello")
+	myfmt.Println("world")
+}

@@ -9,10 +9,10 @@ import (
 
 func Test(t *testing.T) {
 	testdata := analysistest.TestData()
-	analysistest.Run(t, testdata, dupimport.Analyzer, "a")
+	analysistest.Run(t, testdata, dupimport.Analyzer, "a", "b", "c", "d", "e", "f", "g")
 }
 
 func TestSuggestedFix(t *testing.T) {
 	testdata := analysistest.TestData()
-	analysistest.RunWithSuggestedFixes(t, testdata, dupimport.Analyzer, "a")
+	analysistest.RunWithSuggestedFixes(t, testdata, dupimport.Analyzer, "a", "b", "c", "d", "e", "f", "g")
 }

@@ -6,5 +6,5 @@ import (
 
 func main() {
 	fmt.Println("hoge")
-	fmt2.Println("hoge")
+	fmt.Println("hoge")
 }

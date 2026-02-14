@@ -1,0 +1,10 @@
+package b
+
+import (
+	f1 "fmt"
+)
+
+func main() {
+	f1.Println("hello")
+	f1.Println("world")
+}

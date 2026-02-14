@@ -1,0 +1,13 @@
+package e
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println("hello")
+	fmt.Println("world")
+	strings.Contains("hello world", "hello")
+	strings.Contains("hello world", "world")
+}
