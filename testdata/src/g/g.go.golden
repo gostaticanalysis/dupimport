@@ -1,0 +1,10 @@
+package g
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("used")
+	_ = fmt.Sprintf("unused")
+}

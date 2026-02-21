@@ -1,0 +1,10 @@
+package f
+
+import (
+	"net/http"
+)
+
+func main() {
+	http.DefaultClient.Get("https://example.com")
+	http.DefaultClient.Get("https://example.com")
+}
